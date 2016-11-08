@@ -1,1 +1,1 @@
-Command "git" "fetch" "origin" "heads/master:git-pull-of-fcad1c44f73d7079d62f82dd1b7891db94d429e4.new" exited with status 128
+Git fetch ref/heads/master (head=fcad1c)
