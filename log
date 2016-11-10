@@ -1,0 +1,15 @@
+=== Dockerfile for dockerfile mirage1:heads/master (alpine-3.4/4.04.0/opam-repo:f31171:)
+[2016-11-10 15:36.02] Starting...
+[2016-11-10 15:36.02] Building Dockerfile for installing dockerfile (alpine-3.4 4.04.0)
+FROM ocaml/opam:alpine-3.4_ocaml-4.04.0
+WORKDIR /home/opam/opam-repository
+RUN git pull origin master
+RUN git checkout f31171f4c8003ab1ffe6ef7c025d05c3c2324879
+RUN opam update
+RUN git clone git://github.com/avsm/ocaml-dockerfile /home/opam/src
+WORKDIR /home/opam/src
+RUN git fetch origin heads/master:cibranch
+RUN git checkout f872197db0f7c61329ce4876be8cce9d6aa81198
+RUN opam pin add -n dockerfile /home/opam/src
+RUN opam depext -uy dockerfile
+RUN opam install -j 2 -vy dockerfile[2016-11-10 15:36.02] Success
