@@ -1,0 +1,9 @@
+=== Git fetch ref/heads/master (head=f87219)
+[2016-11-10 15:30.50] Starting...
+fatal: Not a valid branch point: 'f872197db0f7c61329ce4876be8cce9d6aa81198'.
+[2016-11-10 15:30.50] Fetching PR branch
+From github.com:avsm/ocaml-dockerfile
+ * [new branch]      master     -> git-pull-of-f872197db0f7c61329ce4876be8cce9d6aa81198.new
+   243de8f..f872197  master     -> origin/master
+Deleted branch git-pull-of-f872197db0f7c61329ce4876be8cce9d6aa81198.new (was f872197).
+[2016-11-10 15:30.52] Success
