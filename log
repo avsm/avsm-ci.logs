@@ -1,0 +1,9 @@
+=== f872197db0f7c61329ce4876be8cce9d6aa81198
+[2016-11-10 15:30.52] Starting...
+HEAD is now at f872197 Merge branch 'master' of github.com:avsm/ocaml-dockerfile
+reading file from /Users/avsm/src/git/avsm/mirage-ci/_checkouts/avsm/ocaml-dockerfile/.datakit.toml
+[2016-11-10 15:30.52] Storing TOML
+(((ref (heads master)) (ocamlv (4.02.3 4.03.0 4.04.0)) (flambda true)
+  (distros (alpine-3.4)))
+ ((ref (tags v2.0.0)) (ocamlv (4.03.0)) (flambda false)
+  (distros (debian-stable))))[2016-11-10 15:30.52] Success
