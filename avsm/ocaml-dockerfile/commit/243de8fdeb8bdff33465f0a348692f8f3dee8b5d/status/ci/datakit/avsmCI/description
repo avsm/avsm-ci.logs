@@ -1,5 +1,1 @@
-References: heads/master
-Compilers: 4.02.3, 4.03.0, 4.04.0
-Distributions: alpine-3.4
-flambda: true
-
+Dockerfile for dockerfile mirage3:heads/master (alpine-3.4/4.02.3/opam-repo:5ceaf1:)
