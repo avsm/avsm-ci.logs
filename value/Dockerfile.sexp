@@ -1,0 +1,12 @@
+((From (Image_tag (ocaml/opam alpine-3.4_ocaml-4.03.0)))
+ (Workdir /home/opam/opam-repository) (Run (Shell "git pull origin master"))
+ (Run (Shell "git checkout f31171f4c8003ab1ffe6ef7c025d05c3c2324879"))
+ (Run (Shell "opam update"))
+ (Run
+  (Shell "git clone git://github.com/avsm/ocaml-dockerfile /home/opam/src"))
+ (Workdir /home/opam/src)
+ (Run (Shell "git fetch origin heads/master:cibranch"))
+ (Run (Shell "git checkout f872197db0f7c61329ce4876be8cce9d6aa81198"))
+ (Run (Shell "opam pin add -n dockerfile /home/opam/src"))
+ (Run (Shell "opam depext -uy dockerfile"))
+ (Run (Shell "opam install -j 2 -vy dockerfile")))
